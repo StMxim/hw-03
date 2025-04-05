@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веб-сторінка - Лабораторна робота 3</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile-menu.css">
+    <link rel="stylesheet" href="./css/js-components.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="./index.html" class="logo">
+                <img src="./images/logo.svg" alt="Логотип компанії" width="120">
+            </a>
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#about" class="nav-link">Про нас</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Послуги</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">Портфоліо</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Контакти</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu"
+                aria-label="Відкрити мобільне меню">
+                <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero section">
+            <div class="container">
+                <h1 class="hero-title">Сучасні веб-рішення для вашого бізнесу</h1>
+                <p class="hero-text">Ми створюємо якісні веб-сайти, які допомагають компаніям досягати своїх цілей</p>
+                <button type="button" class="hero-button">Замовити сайт</button>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section-title">Про нас</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Ми команда креативних професіоналів, які створюють інноваційні веб-рішення. Наша місія —
+                            допомагати бізнесу ефективно працювати в цифровому просторі.</p>
+                        <p>Наш підхід базується на глибокому розумінні потреб клієнта та сучасних тенденцій
+                            веб-розробки.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="./images/about.svg" alt="Команда за роботою" width="540">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services section" id="services">
+            <div class="container">
+                <h2 class="section-title">Наші послуги</h2>
+                <ul class="services-list">
+                    <li class="services-item">
+                        <div class="icon-container">
+                            <img src="./images/service-1.svg" alt="Веб-дизайн" width="40" height="40">
+                        </div>
+                        <h3 class="services-subtitle">Веб-дизайн</h3>
+                        <p class="services-text">Створення сучасного та функціонального дизайну для вашого сайту</p>
+                    </li>
+                    <li class="services-item">
+                        <div class="icon-container">
+                            <img src="./images/service-2.svg" alt="Розробка" width="40" height="40">
+                        </div>
+                        <h3 class="services-subtitle">Розробка</h3>
+                        <p class="services-text">Розробка веб-сайтів з використанням новітніх технологій</p>
+                    </li>
+                    <li class="services-item">
+                        <div class="icon-container">
+                            <img src="./images/service-3.svg" alt="SEO" width="40" height="40">
+                        </div>
+                        <h3 class="services-subtitle">SEO оптимізація</h3>
+                        <p class="services-text">Просування вашого сайту у пошукових системах для збільшення конверсій
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <h2 class="section-title">Наші роботи</h2>
+
+                <!-- Swiper для мобільних пристроїв -->
+                <div class="portfolio-swiper swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/portfolio-1.svg" alt="Проект інтернет-магазину" width="360">
+                            <div class="portfolio-info">
+                                <h3 class="portfolio-subtitle">Інтернет-магазин</h3>
+                                <p class="portfolio-text">E-commerce рішення для продажу товарів онлайн</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/portfolio-2.svg" alt="Корпоративний сайт" width="360">
+                            <div class="portfolio-info">
+                                <h3 class="portfolio-subtitle">Корпоративний сайт</h3>
+                                <p class="portfolio-text">Презентаційний сайт для будівельної компанії</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/portfolio-3.svg" alt="Лендінг" width="360">
+                            <div class="portfolio-info">
+                                <h3 class="portfolio-subtitle">Лендінг</h3>
+                                <p class="portfolio-text">Сторінка для просування нового продукту</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/portfolio-4.svg" alt="Веб-додаток" width="360">
+                            <div class="portfolio-info">
+                                <h3 class="portfolio-subtitle">Веб-додаток</h3>
+                                <p class="portfolio-text">CRM-система для керування клієнтами</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Додаємо навігацію та пагінацію -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Сітка для планшетів і десктопів -->
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="./images/portfolio-1.svg" alt="Проект інтернет-магазину" width="360">
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-subtitle">Інтернет-магазин</h3>
+                            <p class="portfolio-text">E-commerce рішення для продажу товарів онлайн</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="./images/portfolio-2.svg" alt="Корпоративний сайт" width="360">
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-subtitle">Корпоративний сайт</h3>
+                            <p class="portfolio-text">Презентаційний сайт для будівельної компанії</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="./images/portfolio-3.svg" alt="Лендінг" width="360">
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-subtitle">Лендінг</h3>
+                            <p class="portfolio-text">Сторінка для просування нового продукту</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="./images/portfolio-4.svg" alt="Веб-додаток" width="360">
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-subtitle">Веб-додаток</h3>
+                            <p class="portfolio-text">CRM-система для керування клієнтами</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Зв'яжіться з нами</h2>
+                <div class="contact-wrapper">
+                    <form class="contact-form" name="contact-form" autocomplete="off">
+                        <label class="form-label" for="name">
+                            Ім'я
+                            <input type="text" name="name" id="name" class="form-input" required
+                                placeholder="Ваше ім'я">
+                        </label>
+                        <label class="form-label" for="email">
+                            Email
+                            <input type="email" name="email" id="email" class="form-input" required
+                                placeholder="example@mail.com">
+                        </label>
+                        <label class="form-label" for="message">
+                            Повідомлення
+                            <textarea name="message" id="message" class="form-textarea" required
+                                placeholder="Напишіть ваше повідомлення..."></textarea>
+                        </label>
+                        <button type="submit" class="form-button">Надіслати</button>
+                    </form>
+                    <div class="contact-info">
+                        <p>Ми завжди відкриті для спілкування та готові відповісти на всі ваші запитання.</p>
+                        <ul class="contact-list">
+                            <li class="contact-item">
+                                <p>
+                                    <svg class="contact-icon" width="20" height="20" aria-hidden="true">
+                                        <use href="./images/icons/icons.svg#icon-phone"></use>
+                                    </svg>
+                                    <a href="tel:+380123456789">+380 12 345 6789</a>
+                                </p>
+                            </li>
+                            <li class="contact-item">
+                                <p>
+                                    <svg class="contact-icon" width="20" height="20" aria-hidden="true">
+                                        <use href="./images/icons/icons.svg#icon-email"></use>
+                                    </svg>
+                                    <a href="mailto:info@webstudio.com">info@webstudio.com</a>
+                                </p>
+                            </li>
+                            <li class="contact-item">
+                                <p>
+                                    <svg class="contact-icon" width="20" height="20" aria-hidden="true">
+                                        <use href="./images/icons/icons.svg#icon-location"></use>
+                                    </svg>
+                                    <span>м. Київ, вул. Хрещатик, 1</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <a href="./index.html" class="logo">
+                    <img src="./images/logo.svg" alt="Логотип компанії" width="120">
+                </a>
+                <p class="footer-text">Створюємо унікальні веб-рішення для вашого бізнесу з 2010 року</p>
+            </div>
+            <div class="footer-navigation">
+                <h3 class="footer-title">Навігація</h3>
+                <ul class="footer-list">
+                    <li class="footer-item"><a href="#about" class="footer-link">Про нас</a></li>
+                    <li class="footer-item"><a href="#services" class="footer-link">Послуги</a></li>
+                    <li class="footer-item"><a href="#portfolio" class="footer-link">Портфоліо</a></li>
+                    <li class="footer-item"><a href="#contact" class="footer-link">Контакти</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3 class="footer-title">Соціальні мережі</h3>
+                <ul class="social-list">
+                    <li class="social-item"><a href="#" class="social-link">Instagram</a></li>
+                    <li class="social-item"><a href="#" class="social-link">Facebook</a></li>
+                    <li class="social-item"><a href="#" class="social-link">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <p class="copyright">&copy; 2023 WebStudio. Усі права захищені.</p>
+        </div>
+    </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu" aria-label="Закрити мобільне меню">
+            <div class="close-icon">
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </button>
+
+        <div class="mobile-menu-content">
+            <nav class="mobile-menu-navigation">
+                <ul class="mobile-menu-nav list">
+                    <li><a href="#about" class="link">Про нас</a></li>
+                    <li><a href="#services" class="link">Послуги</a></li>
+                    <li><a href="#portfolio" class="link">Портфоліо</a></li>
+                    <li><a href="#contact" class="link">Контакти</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-menu-bottom">
+                <div class="mobile-contacts-nav">
+                    <a href="tel:+380123456789" class="link phone" aria-label="Зателефонувати">
+                        +380 12 345 6789
+                    </a>
+                    <a href="mailto:info@webstudio.com" class="link email" aria-label="Написати email">
+                        info@webstudio.com
+                    </a>
+                </div>
+
+                <ul class="mobile-socials list">
+                    <li><a href="#" class="link" aria-label="Instagram">Instagram</a></li>
+                    <li><a href="#" class="link" aria-label="Facebook">Facebook</a></li>
+                    <li><a href="#" class="link" aria-label="LinkedIn">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Підключення JavaScript файлів -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/portfolio-slider.js"></script>
+    <script src="./js/form-handler.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/expand-text.js"></script>
+</body>
+
+</html>
